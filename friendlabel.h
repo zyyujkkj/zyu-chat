@@ -1,7 +1,7 @@
 #ifndef FRIENDLABEL_H
 #define FRIENDLABEL_H
 
-#include <QWidget>
+
 #include <QFrame>
 
 namespace Ui {

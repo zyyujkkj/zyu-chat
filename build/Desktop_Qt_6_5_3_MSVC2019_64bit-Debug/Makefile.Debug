@@ -64,6 +64,7 @@ SOURCES       = D:\cpp-project\zyuchat\adduseritem.cpp \
 		D:\cpp-project\zyuchat\clickedoncelabel.cpp \
 		D:\cpp-project\zyuchat\customizeedit.cpp \
 		D:\cpp-project\zyuchat\findsuccessdlg.cpp \
+		D:\cpp-project\zyuchat\friendlabel.cpp \
 		D:\cpp-project\zyuchat\global.cpp \
 		D:\cpp-project\zyuchat\httpmgr.cpp \
 		D:\cpp-project\zyuchat\listitembase.cpp \
@@ -96,6 +97,7 @@ SOURCES       = D:\cpp-project\zyuchat\adduseritem.cpp \
 		debug\moc_clickedoncelabel.cpp \
 		debug\moc_customizeedit.cpp \
 		debug\moc_findsuccessdlg.cpp \
+		debug\moc_friendlabel.cpp \
 		debug\moc_httpmgr.cpp \
 		debug\moc_listitembase.cpp \
 		debug\moc_loadingdlg.cpp \
@@ -124,6 +126,7 @@ OBJECTS       = debug\adduseritem.obj \
 		debug\clickedoncelabel.obj \
 		debug\customizeedit.obj \
 		debug\findsuccessdlg.obj \
+		debug\friendlabel.obj \
 		debug\global.obj \
 		debug\httpmgr.obj \
 		debug\listitembase.obj \
@@ -157,6 +160,7 @@ OBJECTS       = debug\adduseritem.obj \
 		debug\moc_clickedoncelabel.obj \
 		debug\moc_customizeedit.obj \
 		debug\moc_findsuccessdlg.obj \
+		debug\moc_friendlabel.obj \
 		debug\moc_httpmgr.obj \
 		debug\moc_listitembase.obj \
 		debug\moc_loadingdlg.obj \
@@ -186,6 +190,7 @@ DIST          = config.ini D:\cpp-project\zyuchat\adduseritem.h \
 		D:\cpp-project\zyuchat\clickedoncelabel.h \
 		D:\cpp-project\zyuchat\customizeedit.h \
 		D:\cpp-project\zyuchat\findsuccessdlg.h \
+		D:\cpp-project\zyuchat\friendlabel.h \
 		D:\cpp-project\zyuchat\global.h \
 		D:\cpp-project\zyuchat\httpmgr.h \
 		D:\cpp-project\zyuchat\listitembase.h \
@@ -217,6 +222,7 @@ DIST          = config.ini D:\cpp-project\zyuchat\adduseritem.h \
 		D:\cpp-project\zyuchat\clickedoncelabel.cpp \
 		D:\cpp-project\zyuchat\customizeedit.cpp \
 		D:\cpp-project\zyuchat\findsuccessdlg.cpp \
+		D:\cpp-project\zyuchat\friendlabel.cpp \
 		D:\cpp-project\zyuchat\global.cpp \
 		D:\cpp-project\zyuchat\httpmgr.cpp \
 		D:\cpp-project\zyuchat\listitembase.cpp \
@@ -309,10 +315,10 @@ DESTDIR_TARGET = bin\zyuchat.exe
 first: all
 all: Makefile.Debug  bin\zyuchat.exe
 
-bin\zyuchat.exe: D:\Qt_project\6.5.3\msvc2019_64\lib\Qt6Widgetsd.lib D:\Qt_project\6.5.3\msvc2019_64\lib\Qt6Guid.lib D:\Qt_project\6.5.3\msvc2019_64\lib\Qt6Networkd.lib D:\Qt_project\6.5.3\msvc2019_64\lib\Qt6Cored.lib D:\Qt_project\6.5.3\msvc2019_64\lib\Qt6EntryPointd.lib ui_adduseritem.h ui_applyfriend.h ui_chatdialog.h ui_chatpage.h ui_chatuserwid.h ui_findsuccessdlg.h ui_loadingdlg.h ui_logindialog.h ui_mainwindow.h ui_registerdialog.h ui_resetdialog.h $(OBJECTS) debug\zyuchat_resource.res
+bin\zyuchat.exe: D:\Qt_project\6.5.3\msvc2019_64\lib\Qt6Widgetsd.lib D:\Qt_project\6.5.3\msvc2019_64\lib\Qt6Guid.lib D:\Qt_project\6.5.3\msvc2019_64\lib\Qt6Networkd.lib D:\Qt_project\6.5.3\msvc2019_64\lib\Qt6Cored.lib D:\Qt_project\6.5.3\msvc2019_64\lib\Qt6EntryPointd.lib ui_adduseritem.h ui_applyfriend.h ui_chatdialog.h ui_chatpage.h ui_chatuserwid.h ui_findsuccessdlg.h ui_friendlabel.h ui_loadingdlg.h ui_logindialog.h ui_mainwindow.h ui_registerdialog.h ui_resetdialog.h $(OBJECTS) debug\zyuchat_resource.res
 	$(LINKER) $(LFLAGS) /MANIFEST:embed /OUT:$(DESTDIR_TARGET) @<<
-debug\adduseritem.obj debug\applyfriend.obj debug\bubbleframe.obj debug\chatdialog.obj debug\chatitembase.obj debug\chatpage.obj debug\chatuserlist.obj debug\chatuserwid.obj debug\chatview.obj debug\clickedbtn.obj debug\clickedlabel.obj debug\clickedoncelabel.obj debug\customizeedit.obj debug\findsuccessdlg.obj debug\global.obj debug\httpmgr.obj debug\listitembase.obj debug\loadingdlg.obj debug\logindialog.obj debug\main.obj debug\mainwindow.obj debug\messagetextedit.obj debug\picturebubble.obj debug\registerdialog.obj debug\resetdialog.obj debug\searchlist.obj debug\statewidget.obj debug\tcpmgr.obj debug\textbubble.obj debug\timerbtn.obj debug\userdata.obj debug\usermgr.obj debug\qrc_rc.obj debug\moc_adduseritem.obj debug\moc_applyfriend.obj debug\moc_bubbleframe.obj debug\moc_chatdialog.obj debug\moc_chatitembase.obj debug\moc_chatpage.obj debug\moc_chatuserlist.obj debug\moc_chatuserwid.obj debug\moc_chatview.obj debug\moc_clickedbtn.obj debug\moc_clickedlabel.obj
-debug\moc_clickedoncelabel.obj debug\moc_customizeedit.obj debug\moc_findsuccessdlg.obj debug\moc_httpmgr.obj debug\moc_listitembase.obj debug\moc_loadingdlg.obj debug\moc_logindialog.obj debug\moc_mainwindow.obj debug\moc_messagetextedit.obj debug\moc_picturebubble.obj debug\moc_registerdialog.obj debug\moc_resetdialog.obj debug\moc_searchlist.obj debug\moc_statewidget.obj debug\moc_tcpmgr.obj debug\moc_textbubble.obj debug\moc_usermgr.obj
+debug\adduseritem.obj debug\applyfriend.obj debug\bubbleframe.obj debug\chatdialog.obj debug\chatitembase.obj debug\chatpage.obj debug\chatuserlist.obj debug\chatuserwid.obj debug\chatview.obj debug\clickedbtn.obj debug\clickedlabel.obj debug\clickedoncelabel.obj debug\customizeedit.obj debug\findsuccessdlg.obj debug\friendlabel.obj debug\global.obj debug\httpmgr.obj debug\listitembase.obj debug\loadingdlg.obj debug\logindialog.obj debug\main.obj debug\mainwindow.obj debug\messagetextedit.obj debug\picturebubble.obj debug\registerdialog.obj debug\resetdialog.obj debug\searchlist.obj debug\statewidget.obj debug\tcpmgr.obj debug\textbubble.obj debug\timerbtn.obj debug\userdata.obj debug\usermgr.obj debug\qrc_rc.obj debug\moc_adduseritem.obj debug\moc_applyfriend.obj debug\moc_bubbleframe.obj debug\moc_chatdialog.obj debug\moc_chatitembase.obj debug\moc_chatpage.obj debug\moc_chatuserlist.obj debug\moc_chatuserwid.obj debug\moc_chatview.obj debug\moc_clickedbtn.obj
+debug\moc_clickedlabel.obj debug\moc_clickedoncelabel.obj debug\moc_customizeedit.obj debug\moc_findsuccessdlg.obj debug\moc_friendlabel.obj debug\moc_httpmgr.obj debug\moc_listitembase.obj debug\moc_loadingdlg.obj debug\moc_logindialog.obj debug\moc_mainwindow.obj debug\moc_messagetextedit.obj debug\moc_picturebubble.obj debug\moc_registerdialog.obj debug\moc_resetdialog.obj debug\moc_searchlist.obj debug\moc_statewidget.obj debug\moc_tcpmgr.obj debug\moc_textbubble.obj debug\moc_usermgr.obj
 $(LIBS)
 <<
 	copy /Y "D:\cpp-project\zyuchat\config.ini" "D:\cpp-project\zyuchat\build\Desktop_Qt_6_5_3_MSVC2019_64bit-Debug\.\bin" & xcopy /Y /E /I "D:\cpp-project\zyuchat\static" "D:\cpp-project\zyuchat\build\Desktop_Qt_6_5_3_MSVC2019_64bit-Debug\.\bin\static\"
@@ -326,10 +332,10 @@ qmake: FORCE
 qmake_all: FORCE
 
 dist:
-	$(ZIP) zyuchat.zip $(SOURCES) $(DIST) D:\cpp-project\zyuchat\zyuchat.pro D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\spec_pre.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\common\windows-desktop.conf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\win32\windows_vulkan_sdk.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\common\windows-vulkan.conf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\common\msvc-desktop.conf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\qconfig.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_ext_freetype.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_ext_libjpeg.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_ext_libpng.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_concurrent.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_concurrent_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_core.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_core_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_dbus.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_dbus_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_designer.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_designer_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_designercomponents_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_devicediscovery_support_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_entrypoint_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_example_icons_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_fb_support_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_freetype_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_gui.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_gui_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_harfbuzz_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_help.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_help_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_jpeg_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_labsanimation.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_labsanimation_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_labsfolderlistmodel.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_labsfolderlistmodel_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_labsqmlmodels.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_labsqmlmodels_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_labssettings.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_labssettings_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_labssharedimage.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_labssharedimage_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_labswavefrontmesh.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_labswavefrontmesh_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_linguist.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_linguist_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_network.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_network_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_opengl.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_opengl_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_openglwidgets.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_openglwidgets_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_packetprotocol_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_png_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_printsupport.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_printsupport_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qml.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qml_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmlcompiler_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmlcore.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmlcore_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmldebug_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmldom_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmlintegration.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmlintegration_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmllocalstorage.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmllocalstorage_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmlmodels.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmlmodels_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmltest.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmltest_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmltyperegistrar_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmlworkerscript.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmlworkerscript_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmlxmllistmodel.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmlxmllistmodel_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quick.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quick_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickcontrols2.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickcontrols2_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickcontrols2impl.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickcontrols2impl_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickcontrolstestutilsprivate_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickdialogs2.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickdialogs2_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickdialogs2utils.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickdialogs2utils_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickeffects_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quicklayouts.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quicklayouts_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickparticles_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickshapes_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quicktemplates2.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quicktemplates2_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quicktestutilsprivate_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickwidgets.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickwidgets_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_sql.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_sql_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_svg.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_svg_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_svgwidgets.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_svgwidgets_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_testlib.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_testlib_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_tools_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_uiplugin.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_uitools.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_uitools_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_widgets.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_widgets_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_xml.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_xml_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_zlib_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\qt_functions.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\qt_config.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\win32-msvc\qmake.conf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\spec_post.prf .qmake.stash D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\exclusive_builds.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\common\msvc-version.conf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\toolchain.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\default_pre.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\win32\default_pre.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\resolve_config.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\exclusive_builds_post.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\default_post.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\build_pass.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\qml_debug.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\entrypoint.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\precompile_header.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\warn_on.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\qt.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\resources_functions.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\resources.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\moc.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\win32\opengl.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\uic.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\qmake_use.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\file_copies.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\win32\windows.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\testcase_targets.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\exceptions.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\yacc.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\lex.prf D:\cpp-project\zyuchat\zyuchat.pro D:\cpp-project\zyuchat\rc.qrc D:\Qt_project\6.5.3\msvc2019_64\lib\Qt6Widgetsd.prl D:\Qt_project\6.5.3\msvc2019_64\lib\Qt6Guid.prl D:\Qt_project\6.5.3\msvc2019_64\lib\Qt6Networkd.prl D:\Qt_project\6.5.3\msvc2019_64\lib\Qt6Cored.prl D:\Qt_project\6.5.3\msvc2019_64\lib\Qt6EntryPointd.prl   D:\cpp-project\zyuchat\rc.qrc D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\data\dummy.cpp D:\cpp-project\zyuchat\adduseritem.h D:\cpp-project\zyuchat\applyfriend.h D:\cpp-project\zyuchat\bubbleframe.h D:\cpp-project\zyuchat\chatdialog.h D:\cpp-project\zyuchat\chatitembase.h D:\cpp-project\zyuchat\chatpage.h D:\cpp-project\zyuchat\chatuserlist.h D:\cpp-project\zyuchat\chatuserwid.h D:\cpp-project\zyuchat\chatview.h D:\cpp-project\zyuchat\clickedbtn.h D:\cpp-project\zyuchat\clickedlabel.h D:\cpp-project\zyuchat\clickedoncelabel.h D:\cpp-project\zyuchat\customizeedit.h D:\cpp-project\zyuchat\findsuccessdlg.h D:\cpp-project\zyuchat\global.h D:\cpp-project\zyuchat\httpmgr.h D:\cpp-project\zyuchat\listitembase.h D:\cpp-project\zyuchat\loadingdlg.h D:\cpp-project\zyuchat\logindialog.h D:\cpp-project\zyuchat\mainwindow.h D:\cpp-project\zyuchat\messagetextedit.h D:\cpp-project\zyuchat\picturebubble.h D:\cpp-project\zyuchat\registerdialog.h D:\cpp-project\zyuchat\resetdialog.h D:\cpp-project\zyuchat\searchlist.h D:\cpp-project\zyuchat\singleton.h D:\cpp-project\zyuchat\statewidget.h D:\cpp-project\zyuchat\tcpmgr.h D:\cpp-project\zyuchat\textbubble.h D:\cpp-project\zyuchat\timerbtn.h D:\cpp-project\zyuchat\userdata.h D:\cpp-project\zyuchat\usermgr.h  D:\cpp-project\zyuchat\adduseritem.cpp D:\cpp-project\zyuchat\applyfriend.cpp D:\cpp-project\zyuchat\bubbleframe.cpp D:\cpp-project\zyuchat\chatdialog.cpp D:\cpp-project\zyuchat\chatitembase.cpp D:\cpp-project\zyuchat\chatpage.cpp D:\cpp-project\zyuchat\chatuserlist.cpp D:\cpp-project\zyuchat\chatuserwid.cpp D:\cpp-project\zyuchat\chatview.cpp D:\cpp-project\zyuchat\clickedbtn.cpp D:\cpp-project\zyuchat\clickedlabel.cpp D:\cpp-project\zyuchat\clickedoncelabel.cpp D:\cpp-project\zyuchat\customizeedit.cpp D:\cpp-project\zyuchat\findsuccessdlg.cpp D:\cpp-project\zyuchat\global.cpp D:\cpp-project\zyuchat\httpmgr.cpp D:\cpp-project\zyuchat\listitembase.cpp D:\cpp-project\zyuchat\loadingdlg.cpp D:\cpp-project\zyuchat\logindialog.cpp D:\cpp-project\zyuchat\main.cpp D:\cpp-project\zyuchat\mainwindow.cpp D:\cpp-project\zyuchat\messagetextedit.cpp D:\cpp-project\zyuchat\picturebubble.cpp D:\cpp-project\zyuchat\registerdialog.cpp D:\cpp-project\zyuchat\resetdialog.cpp D:\cpp-project\zyuchat\searchlist.cpp D:\cpp-project\zyuchat\statewidget.cpp D:\cpp-project\zyuchat\tcpmgr.cpp D:\cpp-project\zyuchat\textbubble.cpp D:\cpp-project\zyuchat\timerbtn.cpp D:\cpp-project\zyuchat\userdata.cpp D:\cpp-project\zyuchat\usermgr.cpp D:\cpp-project\zyuchat\adduseritem.ui D:\cpp-project\zyuchat\applyfriend.ui D:\cpp-project\zyuchat\chatdialog.ui D:\cpp-project\zyuchat\chatpage.ui D:\cpp-project\zyuchat\chatuserwid.ui D:\cpp-project\zyuchat\findsuccessdlg.ui D:\cpp-project\zyuchat\loadingdlg.ui D:\cpp-project\zyuchat\logindialog.ui D:\cpp-project\zyuchat\mainwindow.ui D:\cpp-project\zyuchat\registerdialog.ui D:\cpp-project\zyuchat\resetdialog.ui    
+	$(ZIP) zyuchat.zip $(SOURCES) $(DIST) D:\cpp-project\zyuchat\zyuchat.pro D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\spec_pre.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\common\windows-desktop.conf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\win32\windows_vulkan_sdk.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\common\windows-vulkan.conf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\common\msvc-desktop.conf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\qconfig.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_ext_freetype.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_ext_libjpeg.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_ext_libpng.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_concurrent.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_concurrent_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_core.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_core_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_dbus.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_dbus_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_designer.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_designer_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_designercomponents_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_devicediscovery_support_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_entrypoint_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_example_icons_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_fb_support_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_freetype_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_gui.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_gui_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_harfbuzz_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_help.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_help_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_jpeg_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_labsanimation.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_labsanimation_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_labsfolderlistmodel.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_labsfolderlistmodel_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_labsqmlmodels.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_labsqmlmodels_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_labssettings.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_labssettings_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_labssharedimage.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_labssharedimage_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_labswavefrontmesh.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_labswavefrontmesh_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_linguist.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_linguist_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_network.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_network_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_opengl.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_opengl_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_openglwidgets.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_openglwidgets_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_packetprotocol_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_png_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_printsupport.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_printsupport_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qml.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qml_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmlcompiler_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmlcore.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmlcore_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmldebug_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmldom_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmlintegration.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmlintegration_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmllocalstorage.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmllocalstorage_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmlmodels.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmlmodels_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmltest.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmltest_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmltyperegistrar_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmlworkerscript.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmlworkerscript_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmlxmllistmodel.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_qmlxmllistmodel_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quick.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quick_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickcontrols2.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickcontrols2_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickcontrols2impl.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickcontrols2impl_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickcontrolstestutilsprivate_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickdialogs2.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickdialogs2_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickdialogs2utils.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickdialogs2utils_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickeffects_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quicklayouts.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quicklayouts_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickparticles_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickshapes_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quicktemplates2.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quicktemplates2_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quicktestutilsprivate_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickwidgets.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_quickwidgets_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_sql.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_sql_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_svg.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_svg_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_svgwidgets.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_svgwidgets_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_testlib.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_testlib_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_tools_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_uiplugin.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_uitools.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_uitools_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_widgets.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_widgets_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_xml.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_xml_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\modules\qt_lib_zlib_private.pri D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\qt_functions.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\qt_config.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\win32-msvc\qmake.conf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\spec_post.prf .qmake.stash D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\exclusive_builds.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\common\msvc-version.conf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\toolchain.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\default_pre.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\win32\default_pre.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\resolve_config.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\exclusive_builds_post.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\default_post.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\build_pass.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\qml_debug.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\entrypoint.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\precompile_header.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\warn_on.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\qt.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\resources_functions.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\resources.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\moc.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\win32\opengl.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\uic.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\qmake_use.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\file_copies.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\win32\windows.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\testcase_targets.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\exceptions.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\yacc.prf D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\lex.prf D:\cpp-project\zyuchat\zyuchat.pro D:\cpp-project\zyuchat\rc.qrc D:\Qt_project\6.5.3\msvc2019_64\lib\Qt6Widgetsd.prl D:\Qt_project\6.5.3\msvc2019_64\lib\Qt6Guid.prl D:\Qt_project\6.5.3\msvc2019_64\lib\Qt6Networkd.prl D:\Qt_project\6.5.3\msvc2019_64\lib\Qt6Cored.prl D:\Qt_project\6.5.3\msvc2019_64\lib\Qt6EntryPointd.prl   D:\cpp-project\zyuchat\rc.qrc D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\data\dummy.cpp D:\cpp-project\zyuchat\adduseritem.h D:\cpp-project\zyuchat\applyfriend.h D:\cpp-project\zyuchat\bubbleframe.h D:\cpp-project\zyuchat\chatdialog.h D:\cpp-project\zyuchat\chatitembase.h D:\cpp-project\zyuchat\chatpage.h D:\cpp-project\zyuchat\chatuserlist.h D:\cpp-project\zyuchat\chatuserwid.h D:\cpp-project\zyuchat\chatview.h D:\cpp-project\zyuchat\clickedbtn.h D:\cpp-project\zyuchat\clickedlabel.h D:\cpp-project\zyuchat\clickedoncelabel.h D:\cpp-project\zyuchat\customizeedit.h D:\cpp-project\zyuchat\findsuccessdlg.h D:\cpp-project\zyuchat\friendlabel.h D:\cpp-project\zyuchat\global.h D:\cpp-project\zyuchat\httpmgr.h D:\cpp-project\zyuchat\listitembase.h D:\cpp-project\zyuchat\loadingdlg.h D:\cpp-project\zyuchat\logindialog.h D:\cpp-project\zyuchat\mainwindow.h D:\cpp-project\zyuchat\messagetextedit.h D:\cpp-project\zyuchat\picturebubble.h D:\cpp-project\zyuchat\registerdialog.h D:\cpp-project\zyuchat\resetdialog.h D:\cpp-project\zyuchat\searchlist.h D:\cpp-project\zyuchat\singleton.h D:\cpp-project\zyuchat\statewidget.h D:\cpp-project\zyuchat\tcpmgr.h D:\cpp-project\zyuchat\textbubble.h D:\cpp-project\zyuchat\timerbtn.h D:\cpp-project\zyuchat\userdata.h D:\cpp-project\zyuchat\usermgr.h  D:\cpp-project\zyuchat\adduseritem.cpp D:\cpp-project\zyuchat\applyfriend.cpp D:\cpp-project\zyuchat\bubbleframe.cpp D:\cpp-project\zyuchat\chatdialog.cpp D:\cpp-project\zyuchat\chatitembase.cpp D:\cpp-project\zyuchat\chatpage.cpp D:\cpp-project\zyuchat\chatuserlist.cpp D:\cpp-project\zyuchat\chatuserwid.cpp D:\cpp-project\zyuchat\chatview.cpp D:\cpp-project\zyuchat\clickedbtn.cpp D:\cpp-project\zyuchat\clickedlabel.cpp D:\cpp-project\zyuchat\clickedoncelabel.cpp D:\cpp-project\zyuchat\customizeedit.cpp D:\cpp-project\zyuchat\findsuccessdlg.cpp D:\cpp-project\zyuchat\friendlabel.cpp D:\cpp-project\zyuchat\global.cpp D:\cpp-project\zyuchat\httpmgr.cpp D:\cpp-project\zyuchat\listitembase.cpp D:\cpp-project\zyuchat\loadingdlg.cpp D:\cpp-project\zyuchat\logindialog.cpp D:\cpp-project\zyuchat\main.cpp D:\cpp-project\zyuchat\mainwindow.cpp D:\cpp-project\zyuchat\messagetextedit.cpp D:\cpp-project\zyuchat\picturebubble.cpp D:\cpp-project\zyuchat\registerdialog.cpp D:\cpp-project\zyuchat\resetdialog.cpp D:\cpp-project\zyuchat\searchlist.cpp D:\cpp-project\zyuchat\statewidget.cpp D:\cpp-project\zyuchat\tcpmgr.cpp D:\cpp-project\zyuchat\textbubble.cpp D:\cpp-project\zyuchat\timerbtn.cpp D:\cpp-project\zyuchat\userdata.cpp D:\cpp-project\zyuchat\usermgr.cpp D:\cpp-project\zyuchat\adduseritem.ui D:\cpp-project\zyuchat\applyfriend.ui D:\cpp-project\zyuchat\chatdialog.ui D:\cpp-project\zyuchat\chatpage.ui D:\cpp-project\zyuchat\chatuserwid.ui D:\cpp-project\zyuchat\findsuccessdlg.ui D:\cpp-project\zyuchat\friendlabel.ui D:\cpp-project\zyuchat\loadingdlg.ui D:\cpp-project\zyuchat\logindialog.ui D:\cpp-project\zyuchat\mainwindow.ui D:\cpp-project\zyuchat\registerdialog.ui D:\cpp-project\zyuchat\resetdialog.ui    
 
 clean: compiler_clean 
-	-$(DEL_FILE) debug\adduseritem.obj debug\applyfriend.obj debug\bubbleframe.obj debug\chatdialog.obj debug\chatitembase.obj debug\chatpage.obj debug\chatuserlist.obj debug\chatuserwid.obj debug\chatview.obj debug\clickedbtn.obj debug\clickedlabel.obj debug\clickedoncelabel.obj debug\customizeedit.obj debug\findsuccessdlg.obj debug\global.obj debug\httpmgr.obj debug\listitembase.obj debug\loadingdlg.obj debug\logindialog.obj debug\main.obj debug\mainwindow.obj debug\messagetextedit.obj debug\picturebubble.obj debug\registerdialog.obj debug\resetdialog.obj debug\searchlist.obj debug\statewidget.obj debug\tcpmgr.obj debug\textbubble.obj debug\timerbtn.obj debug\userdata.obj debug\usermgr.obj debug\qrc_rc.obj debug\moc_adduseritem.obj debug\moc_applyfriend.obj debug\moc_bubbleframe.obj debug\moc_chatdialog.obj debug\moc_chatitembase.obj debug\moc_chatpage.obj debug\moc_chatuserlist.obj debug\moc_chatuserwid.obj debug\moc_chatview.obj debug\moc_clickedbtn.obj debug\moc_clickedlabel.obj debug\moc_clickedoncelabel.obj debug\moc_customizeedit.obj debug\moc_findsuccessdlg.obj debug\moc_httpmgr.obj debug\moc_listitembase.obj debug\moc_loadingdlg.obj debug\moc_logindialog.obj debug\moc_mainwindow.obj debug\moc_messagetextedit.obj debug\moc_picturebubble.obj debug\moc_registerdialog.obj debug\moc_resetdialog.obj debug\moc_searchlist.obj debug\moc_statewidget.obj debug\moc_tcpmgr.obj debug\moc_textbubble.obj debug\moc_usermgr.obj
+	-$(DEL_FILE) debug\adduseritem.obj debug\applyfriend.obj debug\bubbleframe.obj debug\chatdialog.obj debug\chatitembase.obj debug\chatpage.obj debug\chatuserlist.obj debug\chatuserwid.obj debug\chatview.obj debug\clickedbtn.obj debug\clickedlabel.obj debug\clickedoncelabel.obj debug\customizeedit.obj debug\findsuccessdlg.obj debug\friendlabel.obj debug\global.obj debug\httpmgr.obj debug\listitembase.obj debug\loadingdlg.obj debug\logindialog.obj debug\main.obj debug\mainwindow.obj debug\messagetextedit.obj debug\picturebubble.obj debug\registerdialog.obj debug\resetdialog.obj debug\searchlist.obj debug\statewidget.obj debug\tcpmgr.obj debug\textbubble.obj debug\timerbtn.obj debug\userdata.obj debug\usermgr.obj debug\qrc_rc.obj debug\moc_adduseritem.obj debug\moc_applyfriend.obj debug\moc_bubbleframe.obj debug\moc_chatdialog.obj debug\moc_chatitembase.obj debug\moc_chatpage.obj debug\moc_chatuserlist.obj debug\moc_chatuserwid.obj debug\moc_chatview.obj debug\moc_clickedbtn.obj debug\moc_clickedlabel.obj debug\moc_clickedoncelabel.obj debug\moc_customizeedit.obj debug\moc_findsuccessdlg.obj debug\moc_friendlabel.obj debug\moc_httpmgr.obj debug\moc_listitembase.obj debug\moc_loadingdlg.obj debug\moc_logindialog.obj debug\moc_mainwindow.obj debug\moc_messagetextedit.obj debug\moc_picturebubble.obj debug\moc_registerdialog.obj debug\moc_resetdialog.obj debug\moc_searchlist.obj debug\moc_statewidget.obj debug\moc_tcpmgr.obj debug\moc_textbubble.obj debug\moc_usermgr.obj
 	-$(DEL_FILE) debug\zyuchat.vc.pdb bin\zyuchat.ilk bin\zyuchat.idb
 	-$(DEL_FILE) debug\zyuchat_resource.res
 
@@ -409,9 +415,9 @@ compiler_moc_predefs_clean:
 debug\moc_predefs.h: D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\data\dummy.cpp
 	cl -BxD:\Qt_project\6.5.3\msvc2019_64\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -permissive- -Zc:__cplusplus -Zc:externConstexpr /wd4819 /utf-8 -Zi -MDd -std:c++17 -utf-8 -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E D:\Qt_project\6.5.3\msvc2019_64\mkspecs\features\data\dummy.cpp 2>NUL >debug\moc_predefs.h
 
-compiler_moc_header_make_all: debug\moc_adduseritem.cpp debug\moc_applyfriend.cpp debug\moc_bubbleframe.cpp debug\moc_chatdialog.cpp debug\moc_chatitembase.cpp debug\moc_chatpage.cpp debug\moc_chatuserlist.cpp debug\moc_chatuserwid.cpp debug\moc_chatview.cpp debug\moc_clickedbtn.cpp debug\moc_clickedlabel.cpp debug\moc_clickedoncelabel.cpp debug\moc_customizeedit.cpp debug\moc_findsuccessdlg.cpp debug\moc_httpmgr.cpp debug\moc_listitembase.cpp debug\moc_loadingdlg.cpp debug\moc_logindialog.cpp debug\moc_mainwindow.cpp debug\moc_messagetextedit.cpp debug\moc_picturebubble.cpp debug\moc_registerdialog.cpp debug\moc_resetdialog.cpp debug\moc_searchlist.cpp debug\moc_statewidget.cpp debug\moc_tcpmgr.cpp debug\moc_textbubble.cpp debug\moc_usermgr.cpp
+compiler_moc_header_make_all: debug\moc_adduseritem.cpp debug\moc_applyfriend.cpp debug\moc_bubbleframe.cpp debug\moc_chatdialog.cpp debug\moc_chatitembase.cpp debug\moc_chatpage.cpp debug\moc_chatuserlist.cpp debug\moc_chatuserwid.cpp debug\moc_chatview.cpp debug\moc_clickedbtn.cpp debug\moc_clickedlabel.cpp debug\moc_clickedoncelabel.cpp debug\moc_customizeedit.cpp debug\moc_findsuccessdlg.cpp debug\moc_friendlabel.cpp debug\moc_httpmgr.cpp debug\moc_listitembase.cpp debug\moc_loadingdlg.cpp debug\moc_logindialog.cpp debug\moc_mainwindow.cpp debug\moc_messagetextedit.cpp debug\moc_picturebubble.cpp debug\moc_registerdialog.cpp debug\moc_resetdialog.cpp debug\moc_searchlist.cpp debug\moc_statewidget.cpp debug\moc_tcpmgr.cpp debug\moc_textbubble.cpp debug\moc_usermgr.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) debug\moc_adduseritem.cpp debug\moc_applyfriend.cpp debug\moc_bubbleframe.cpp debug\moc_chatdialog.cpp debug\moc_chatitembase.cpp debug\moc_chatpage.cpp debug\moc_chatuserlist.cpp debug\moc_chatuserwid.cpp debug\moc_chatview.cpp debug\moc_clickedbtn.cpp debug\moc_clickedlabel.cpp debug\moc_clickedoncelabel.cpp debug\moc_customizeedit.cpp debug\moc_findsuccessdlg.cpp debug\moc_httpmgr.cpp debug\moc_listitembase.cpp debug\moc_loadingdlg.cpp debug\moc_logindialog.cpp debug\moc_mainwindow.cpp debug\moc_messagetextedit.cpp debug\moc_picturebubble.cpp debug\moc_registerdialog.cpp debug\moc_resetdialog.cpp debug\moc_searchlist.cpp debug\moc_statewidget.cpp debug\moc_tcpmgr.cpp debug\moc_textbubble.cpp debug\moc_usermgr.cpp
+	-$(DEL_FILE) debug\moc_adduseritem.cpp debug\moc_applyfriend.cpp debug\moc_bubbleframe.cpp debug\moc_chatdialog.cpp debug\moc_chatitembase.cpp debug\moc_chatpage.cpp debug\moc_chatuserlist.cpp debug\moc_chatuserwid.cpp debug\moc_chatview.cpp debug\moc_clickedbtn.cpp debug\moc_clickedlabel.cpp debug\moc_clickedoncelabel.cpp debug\moc_customizeedit.cpp debug\moc_findsuccessdlg.cpp debug\moc_friendlabel.cpp debug\moc_httpmgr.cpp debug\moc_listitembase.cpp debug\moc_loadingdlg.cpp debug\moc_logindialog.cpp debug\moc_mainwindow.cpp debug\moc_messagetextedit.cpp debug\moc_picturebubble.cpp debug\moc_registerdialog.cpp debug\moc_resetdialog.cpp debug\moc_searchlist.cpp debug\moc_statewidget.cpp debug\moc_tcpmgr.cpp debug\moc_textbubble.cpp debug\moc_usermgr.cpp
 debug\moc_adduseritem.cpp: D:\cpp-project\zyuchat\adduseritem.h \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\QWidget \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qwidget.h \
@@ -784,6 +790,66 @@ debug\moc_applyfriend.cpp: D:\cpp-project\zyuchat\applyfriend.h \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QSizeF \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\QTransform \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qnativeinterface.h \
+		D:\cpp-project\zyuchat\clickedlabel.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\QLabel \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qlabel.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qframe.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qpicture.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qtextdocument.h \
+		D:\cpp-project\zyuchat\global.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\QWidget \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QRegularExpression \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qregularexpression.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\QStyle \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qstyle.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QByteArray \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\QNetworkReply \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qnetworkreply.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qtnetworkglobal.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qtnetwork-config.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qtnetworkexports.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QIODevice \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QString \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QVariant \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\QNetworkRequest \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qnetworkrequest.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QSharedDataPointer \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QUrl \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\QNetworkAccessManager \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qnetworkaccessmanager.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\QSslConfiguration \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qsslconfiguration.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qsslsocket.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qtcpsocket.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qabstractsocket.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qhostaddress.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qsslerror.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qsslcertificate.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcryptographichash.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qdatetime.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcalendar.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qlocale.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qssl.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QFlags \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\QSslPreSharedKeyAuthenticator \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qsslpresharedkeyauthenticator.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QMetaType \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QJsonObject \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qjsonobject.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qjsonvalue.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcborvalue.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcborcommon.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\quuid.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QDir \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qdir.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qfile.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qfiledevice.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qfileinfo.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QSettings \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qsettings.h \
+		D:\cpp-project\zyuchat\friendlabel.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\QFrame \
+		D:\cpp-project\zyuchat\userdata.h \
 		debug\moc_predefs.h \
 		D:\Qt_project\6.5.3\msvc2019_64\bin\moc.exe
 	D:\Qt_project\6.5.3\msvc2019_64\bin\moc.exe $(DEFINES) --compiler-flavor=msvc --include D:/cpp-project/zyuchat/build/Desktop_Qt_6_5_3_MSVC2019_64bit-Debug/debug/moc_predefs.h -ID:/Qt_project/6.5.3/msvc2019_64/mkspecs/win32-msvc -ID:/cpp-project/zyuchat -ID:/Qt_project/6.5.3/msvc2019_64/include -ID:/Qt_project/6.5.3/msvc2019_64/include/QtWidgets -ID:/Qt_project/6.5.3/msvc2019_64/include/QtGui -ID:/Qt_project/6.5.3/msvc2019_64/include/QtNetwork -ID:/Qt_project/6.5.3/msvc2019_64/include/QtCore -I. -ID:\visual\VC\Tools\MSVC\14.37.32822\include -ID:\visual\VC\Tools\MSVC\14.37.32822\ATLMFC\include -ID:\visual\VC\Auxiliary\VS\include -I"D:\Windows Kits\10\include\10.0.22621.0\ucrt" -I"D:\Windows Kits\10\\include\10.0.22621.0\\um" -I"D:\Windows Kits\10\\include\10.0.22621.0\\shared" -I"D:\Windows Kits\10\\include\10.0.22621.0\\winrt" -I"D:\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um" D:\cpp-project\zyuchat\applyfriend.h -o debug\moc_applyfriend.cpp
@@ -3065,6 +3131,169 @@ debug\moc_findsuccessdlg.cpp: D:\cpp-project\zyuchat\findsuccessdlg.h \
 		debug\moc_predefs.h \
 		D:\Qt_project\6.5.3\msvc2019_64\bin\moc.exe
 	D:\Qt_project\6.5.3\msvc2019_64\bin\moc.exe $(DEFINES) --compiler-flavor=msvc --include D:/cpp-project/zyuchat/build/Desktop_Qt_6_5_3_MSVC2019_64bit-Debug/debug/moc_predefs.h -ID:/Qt_project/6.5.3/msvc2019_64/mkspecs/win32-msvc -ID:/cpp-project/zyuchat -ID:/Qt_project/6.5.3/msvc2019_64/include -ID:/Qt_project/6.5.3/msvc2019_64/include/QtWidgets -ID:/Qt_project/6.5.3/msvc2019_64/include/QtGui -ID:/Qt_project/6.5.3/msvc2019_64/include/QtNetwork -ID:/Qt_project/6.5.3/msvc2019_64/include/QtCore -I. -ID:\visual\VC\Tools\MSVC\14.37.32822\include -ID:\visual\VC\Tools\MSVC\14.37.32822\ATLMFC\include -ID:\visual\VC\Auxiliary\VS\include -I"D:\Windows Kits\10\include\10.0.22621.0\ucrt" -I"D:\Windows Kits\10\\include\10.0.22621.0\\um" -I"D:\Windows Kits\10\\include\10.0.22621.0\\shared" -I"D:\Windows Kits\10\\include\10.0.22621.0\\winrt" -I"D:\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um" D:\cpp-project\zyuchat\findsuccessdlg.h -o debug\moc_findsuccessdlg.cpp
+
+debug\moc_friendlabel.cpp: D:\cpp-project\zyuchat\friendlabel.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\QFrame \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qframe.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qtwidgetsglobal.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qtguiglobal.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qglobal.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtversionchecks.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qconfig.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtcore-config.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtconfigmacros.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtcoreexports.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtpreprocessorsupport.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtnoop.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qsystemdetection.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qprocessordetection.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcompilerdetection.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qassert.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtypes.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtclasshelpermacros.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtversion.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtypeinfo.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcontainerfwd.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qsysinfo.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qlogging.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qflags.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcompare_impl.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qatomic.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qbasicatomic.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qatomic_cxx11.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qgenericatomic.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qconstructormacros.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qdarwinhelpers.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qexceptionhandling.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qforeach.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtdeprecationmarkers.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qttypetraits.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qfunctionpointer.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qglobalstatic.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qmalloc.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qminmax.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qnumeric.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qoverload.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qswap.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtenvironmentvariables.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtresource.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qttranslation.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qversiontagging.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qtgui-config.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qtguiexports.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qtwidgets-config.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qtwidgetsexports.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qwidget.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qwindowdefs.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qobjectdefs.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qnamespace.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtmetamacros.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qobjectdefs_impl.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qwindowdefs_win.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qobject.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstring.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qchar.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstringview.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qbytearray.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qrefcount.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qarraydata.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qpair.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qarraydatapointer.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qarraydataops.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcontainertools_impl.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qxptype_traits.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qbytearrayalgorithms.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qbytearrayview.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstringfwd.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\q20type_traits.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstringliteral.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstringalgorithms.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qanystringview.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qutf8stringview.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstringtokenizer.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstringbuilder.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qlist.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qhashfunctions.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qiterator.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qbytearraylist.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstringlist.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qalgorithms.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstringmatcher.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcoreevent.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qscopedpointer.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qmetatype.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcompare.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qdatastream.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qiodevicebase.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qfloat16.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qmath.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qiterable.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qmetacontainer.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcontainerinfo.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtaggedpointer.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qscopeguard.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qobject_impl.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qbindingstorage.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qmargins.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qaction.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qkeysequence.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qicon.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qsize.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qpixmap.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qpaintdevice.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qrect.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qpoint.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qcolor.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qrgb.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qrgba64.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qsharedpointer.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qshareddata.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qsharedpointer_impl.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qimage.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qpixelformat.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qtransform.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qpolygon.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qregion.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qline.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qvariant.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qdebug.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtextstream.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstringconverter_base.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcontiguouscache.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qmap.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qshareddata_impl.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qset.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qhash.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qvarlengtharray.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\q20memory.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qpalette.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qbrush.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qfont.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qfontmetrics.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qfontinfo.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qsizepolicy.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qcursor.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qbitmap.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qevent.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qiodevice.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qpointer.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qurl.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qeventpoint.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qvector2d.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qvectornd.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qpointingdevice.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qinputdevice.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qscreen.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QList \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QObject \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QRect \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QSize \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QSizeF \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\QTransform \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qnativeinterface.h \
+		debug\moc_predefs.h \
+		D:\Qt_project\6.5.3\msvc2019_64\bin\moc.exe
+	D:\Qt_project\6.5.3\msvc2019_64\bin\moc.exe $(DEFINES) --compiler-flavor=msvc --include D:/cpp-project/zyuchat/build/Desktop_Qt_6_5_3_MSVC2019_64bit-Debug/debug/moc_predefs.h -ID:/Qt_project/6.5.3/msvc2019_64/mkspecs/win32-msvc -ID:/cpp-project/zyuchat -ID:/Qt_project/6.5.3/msvc2019_64/include -ID:/Qt_project/6.5.3/msvc2019_64/include/QtWidgets -ID:/Qt_project/6.5.3/msvc2019_64/include/QtGui -ID:/Qt_project/6.5.3/msvc2019_64/include/QtNetwork -ID:/Qt_project/6.5.3/msvc2019_64/include/QtCore -I. -ID:\visual\VC\Tools\MSVC\14.37.32822\include -ID:\visual\VC\Tools\MSVC\14.37.32822\ATLMFC\include -ID:\visual\VC\Auxiliary\VS\include -I"D:\Windows Kits\10\include\10.0.22621.0\ucrt" -I"D:\Windows Kits\10\\include\10.0.22621.0\\um" -I"D:\Windows Kits\10\\include\10.0.22621.0\\shared" -I"D:\Windows Kits\10\\include\10.0.22621.0\\winrt" -I"D:\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um" D:\cpp-project\zyuchat\friendlabel.h -o debug\moc_friendlabel.cpp
 
 debug\moc_httpmgr.cpp: D:\cpp-project\zyuchat\httpmgr.h \
 		D:\cpp-project\zyuchat\singleton.h \
@@ -6071,9 +6300,9 @@ compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
-compiler_uic_make_all: ui_adduseritem.h ui_applyfriend.h ui_chatdialog.h ui_chatpage.h ui_chatuserwid.h ui_findsuccessdlg.h ui_loadingdlg.h ui_logindialog.h ui_mainwindow.h ui_registerdialog.h ui_resetdialog.h
+compiler_uic_make_all: ui_adduseritem.h ui_applyfriend.h ui_chatdialog.h ui_chatpage.h ui_chatuserwid.h ui_findsuccessdlg.h ui_friendlabel.h ui_loadingdlg.h ui_logindialog.h ui_mainwindow.h ui_registerdialog.h ui_resetdialog.h
 compiler_uic_clean:
-	-$(DEL_FILE) ui_adduseritem.h ui_applyfriend.h ui_chatdialog.h ui_chatpage.h ui_chatuserwid.h ui_findsuccessdlg.h ui_loadingdlg.h ui_logindialog.h ui_mainwindow.h ui_registerdialog.h ui_resetdialog.h
+	-$(DEL_FILE) ui_adduseritem.h ui_applyfriend.h ui_chatdialog.h ui_chatpage.h ui_chatuserwid.h ui_findsuccessdlg.h ui_friendlabel.h ui_loadingdlg.h ui_logindialog.h ui_mainwindow.h ui_registerdialog.h ui_resetdialog.h
 ui_adduseritem.h: D:\cpp-project\zyuchat\adduseritem.ui \
 		D:\Qt_project\6.5.3\msvc2019_64\bin\uic.exe
 	D:\Qt_project\6.5.3\msvc2019_64\bin\uic.exe D:\cpp-project\zyuchat\adduseritem.ui -o ui_adduseritem.h
@@ -8608,6 +8837,223 @@ ui_findsuccessdlg.h: D:\cpp-project\zyuchat\findsuccessdlg.ui \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qnativeinterface.h
 	D:\Qt_project\6.5.3\msvc2019_64\bin\uic.exe D:\cpp-project\zyuchat\findsuccessdlg.ui -o ui_findsuccessdlg.h
 
+ui_friendlabel.h: D:\cpp-project\zyuchat\friendlabel.ui \
+		D:\Qt_project\6.5.3\msvc2019_64\bin\uic.exe \
+		D:\cpp-project\zyuchat\clickedlabel.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\QLabel \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qlabel.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qtwidgetsglobal.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qtguiglobal.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qglobal.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtversionchecks.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qconfig.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtcore-config.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtconfigmacros.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtcoreexports.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtpreprocessorsupport.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtnoop.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qsystemdetection.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qprocessordetection.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcompilerdetection.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qassert.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtypes.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtclasshelpermacros.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtversion.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtypeinfo.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcontainerfwd.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qsysinfo.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qlogging.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qflags.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcompare_impl.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qatomic.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qbasicatomic.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qatomic_cxx11.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qgenericatomic.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qconstructormacros.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qdarwinhelpers.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qexceptionhandling.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qforeach.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtdeprecationmarkers.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qttypetraits.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qfunctionpointer.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qglobalstatic.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qmalloc.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qminmax.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qnumeric.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qoverload.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qswap.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtenvironmentvariables.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtresource.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qttranslation.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qversiontagging.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qtgui-config.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qtguiexports.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qtwidgets-config.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qtwidgetsexports.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qframe.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qwidget.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qwindowdefs.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qobjectdefs.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qnamespace.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtmetamacros.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qobjectdefs_impl.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qwindowdefs_win.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qobject.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstring.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qchar.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstringview.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qbytearray.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qrefcount.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qarraydata.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qpair.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qarraydatapointer.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qarraydataops.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcontainertools_impl.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qxptype_traits.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qbytearrayalgorithms.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qbytearrayview.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstringfwd.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\q20type_traits.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstringliteral.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstringalgorithms.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qanystringview.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qutf8stringview.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstringtokenizer.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstringbuilder.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qlist.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qhashfunctions.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qiterator.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qbytearraylist.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstringlist.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qalgorithms.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstringmatcher.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcoreevent.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qscopedpointer.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qmetatype.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcompare.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qdatastream.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qiodevicebase.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qfloat16.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qmath.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qiterable.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qmetacontainer.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcontainerinfo.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtaggedpointer.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qscopeguard.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qobject_impl.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qbindingstorage.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qmargins.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qaction.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qkeysequence.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qicon.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qsize.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qpixmap.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qpaintdevice.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qrect.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qpoint.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qcolor.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qrgb.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qrgba64.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qsharedpointer.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qshareddata.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qsharedpointer_impl.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qimage.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qpixelformat.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qtransform.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qpolygon.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qregion.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qline.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qvariant.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qdebug.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtextstream.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstringconverter_base.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcontiguouscache.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qmap.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qshareddata_impl.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qset.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qhash.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qvarlengtharray.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\q20memory.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qpalette.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qbrush.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qfont.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qfontmetrics.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qfontinfo.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qsizepolicy.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qcursor.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qbitmap.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qevent.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qiodevice.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qpointer.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qurl.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qeventpoint.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qvector2d.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qvectornd.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qpointingdevice.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qinputdevice.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qscreen.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QList \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QObject \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QRect \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QSize \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QSizeF \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\QTransform \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qnativeinterface.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qpicture.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qtextdocument.h \
+		D:\cpp-project\zyuchat\global.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\QWidget \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QRegularExpression \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qregularexpression.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\QStyle \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qstyle.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QByteArray \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\QNetworkReply \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qnetworkreply.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qtnetworkglobal.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qtnetwork-config.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qtnetworkexports.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QIODevice \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QString \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QVariant \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\QNetworkRequest \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qnetworkrequest.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QSharedDataPointer \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QUrl \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\QNetworkAccessManager \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qnetworkaccessmanager.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\QSslConfiguration \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qsslconfiguration.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qsslsocket.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qtcpsocket.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qabstractsocket.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qhostaddress.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qsslerror.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qsslcertificate.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcryptographichash.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qdatetime.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcalendar.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qlocale.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qssl.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QFlags \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\QSslPreSharedKeyAuthenticator \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qsslpresharedkeyauthenticator.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QMetaType \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QJsonObject \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qjsonobject.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qjsonvalue.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcborvalue.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcborcommon.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\quuid.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QDir \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qdir.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qfile.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qfiledevice.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qfileinfo.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QSettings \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qsettings.h
+	D:\Qt_project\6.5.3\msvc2019_64\bin\uic.exe D:\cpp-project\zyuchat\friendlabel.ui -o ui_friendlabel.h
+
 ui_loadingdlg.h: D:\cpp-project\zyuchat\loadingdlg.ui \
 		D:\Qt_project\6.5.3\msvc2019_64\bin\uic.exe
 	D:\Qt_project\6.5.3\msvc2019_64\bin\uic.exe D:\cpp-project\zyuchat\loadingdlg.ui -o ui_loadingdlg.h
@@ -9793,8 +10239,67 @@ debug\applyfriend.obj: D:\cpp-project\zyuchat\applyfriend.cpp D:\cpp-project\zyu
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QSizeF \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\QTransform \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qnativeinterface.h \
-		ui_applyfriend.h \
+		D:\cpp-project\zyuchat\clickedlabel.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\QLabel \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qlabel.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qframe.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qpicture.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qtextdocument.h \
+		D:\cpp-project\zyuchat\global.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\QWidget \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QRegularExpression \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qregularexpression.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\QStyle \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qstyle.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QByteArray \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\QNetworkReply \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qnetworkreply.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qtnetworkglobal.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qtnetwork-config.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qtnetworkexports.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QIODevice \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QString \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QVariant \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\QNetworkRequest \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qnetworkrequest.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QSharedDataPointer \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QUrl \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\QNetworkAccessManager \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qnetworkaccessmanager.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\QSslConfiguration \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qsslconfiguration.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qsslsocket.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qtcpsocket.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qabstractsocket.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qhostaddress.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qsslerror.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qsslcertificate.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcryptographichash.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qdatetime.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcalendar.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qlocale.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qssl.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QFlags \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\QSslPreSharedKeyAuthenticator \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qsslpresharedkeyauthenticator.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QMetaType \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QJsonObject \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qjsonobject.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qjsonvalue.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcborvalue.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcborcommon.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\quuid.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QDir \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qdir.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qfile.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qfiledevice.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qfileinfo.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QSettings \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qsettings.h \
+		D:\cpp-project\zyuchat\friendlabel.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\QFrame \
+		D:\cpp-project\zyuchat\userdata.h \
+		ui_applyfriend.h \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\QApplication \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qapplication.h \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcoreapplication.h \
@@ -9815,24 +10320,17 @@ debug\applyfriend.obj: D:\cpp-project\zyuchat\applyfriend.cpp D:\cpp-project\zyu
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qpromise.h \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qguiapplication.h \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qinputmethod.h \
-		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qlocale.h \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qguiapplication_platform.h \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\QHBoxLayout \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qboxlayout.h \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qlayout.h \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qlayoutitem.h \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qgridlayout.h \
-		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\QLabel \
-		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qlabel.h \
-		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qframe.h \
-		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qpicture.h \
-		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qtextdocument.h \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\QScrollArea \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qscrollarea.h \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qabstractscrollarea.h \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\QSpacerItem \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\QVBoxLayout \
-		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\QWidget \
 		D:\cpp-project\zyuchat\clickedbtn.h \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\QPushButton \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qpushbutton.h \
@@ -9846,7 +10344,14 @@ debug\applyfriend.obj: D:\cpp-project\zyuchat\applyfriend.cpp D:\cpp-project\zyu
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qtextoption.h \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QDebug \
 		D:\cpp-project\zyuchat\clickedoncelabel.h \
-		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\QMouseEvent
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\QMouseEvent \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\QScrollBar \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qscrollbar.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qabstractslider.h \
+		D:\cpp-project\zyuchat\usermgr.h \
+		D:\cpp-project\zyuchat\singleton.h \
+		D:\cpp-project\zyuchat\tcpmgr.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\QTcpSocket
 
 debug\bubbleframe.obj: D:\cpp-project\zyuchat\bubbleframe.cpp D:\cpp-project\zyuchat\bubbleframe.h \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\QFrame \
@@ -12456,6 +12961,250 @@ debug\findsuccessdlg.obj: D:\cpp-project\zyuchat\findsuccessdlg.cpp D:\cpp-proje
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qfileinfo.h \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qdatetime.h \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcalendar.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QDebug
+
+debug\friendlabel.obj: D:\cpp-project\zyuchat\friendlabel.cpp D:\cpp-project\zyuchat\friendlabel.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\QFrame \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qframe.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qtwidgetsglobal.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qtguiglobal.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qglobal.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtversionchecks.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qconfig.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtcore-config.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtconfigmacros.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtcoreexports.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtpreprocessorsupport.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtnoop.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qsystemdetection.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qprocessordetection.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcompilerdetection.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qassert.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtypes.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtclasshelpermacros.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtversion.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtypeinfo.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcontainerfwd.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qsysinfo.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qlogging.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qflags.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcompare_impl.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qatomic.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qbasicatomic.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qatomic_cxx11.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qgenericatomic.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qconstructormacros.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qdarwinhelpers.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qexceptionhandling.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qforeach.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtdeprecationmarkers.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qttypetraits.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qfunctionpointer.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qglobalstatic.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qmalloc.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qminmax.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qnumeric.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qoverload.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qswap.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtenvironmentvariables.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtresource.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qttranslation.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qversiontagging.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qtgui-config.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qtguiexports.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qtwidgets-config.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qtwidgetsexports.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qwidget.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qwindowdefs.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qobjectdefs.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qnamespace.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtmetamacros.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qobjectdefs_impl.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qwindowdefs_win.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qobject.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstring.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qchar.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstringview.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qbytearray.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qrefcount.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qarraydata.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qpair.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qarraydatapointer.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qarraydataops.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcontainertools_impl.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qxptype_traits.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qbytearrayalgorithms.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qbytearrayview.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstringfwd.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\q20type_traits.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstringliteral.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstringalgorithms.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qanystringview.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qutf8stringview.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstringtokenizer.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstringbuilder.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qlist.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qhashfunctions.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qiterator.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qbytearraylist.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstringlist.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qalgorithms.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstringmatcher.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcoreevent.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qscopedpointer.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qmetatype.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcompare.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qdatastream.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qiodevicebase.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qfloat16.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qmath.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qiterable.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qmetacontainer.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcontainerinfo.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtaggedpointer.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qscopeguard.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qobject_impl.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qbindingstorage.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qmargins.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qaction.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qkeysequence.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qicon.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qsize.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qpixmap.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qpaintdevice.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qrect.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qpoint.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qcolor.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qrgb.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qrgba64.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qsharedpointer.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qshareddata.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qsharedpointer_impl.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qimage.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qpixelformat.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qtransform.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qpolygon.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qregion.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qline.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qvariant.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qdebug.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtextstream.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qstringconverter_base.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcontiguouscache.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qmap.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qshareddata_impl.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qset.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qhash.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qvarlengtharray.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\q20memory.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qpalette.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qbrush.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qfont.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qfontmetrics.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qfontinfo.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qsizepolicy.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qcursor.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qbitmap.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qevent.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qiodevice.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qpointer.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qurl.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qeventpoint.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qvector2d.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qvectornd.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qpointingdevice.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qinputdevice.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qscreen.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QList \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QObject \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QRect \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QSize \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QSizeF \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\QTransform \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qnativeinterface.h \
+		ui_friendlabel.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QVariant \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\QApplication \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qapplication.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcoreapplication.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qeventloop.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcoreapplication_platform.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qfuture.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qfutureinterface.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qmutex.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qtsan_impl.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qresultstore.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qfuture_impl.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qthreadpool.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qthread.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qdeadlinetimer.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qelapsedtimer.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qrunnable.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qexception.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qpromise.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qguiapplication.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qinputmethod.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qlocale.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qguiapplication_platform.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\QHBoxLayout \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qboxlayout.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qlayout.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qlayoutitem.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qgridlayout.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\QLabel \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qlabel.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qpicture.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtGui\qtextdocument.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\QWidget \
+		D:\cpp-project\zyuchat\clickedlabel.h \
+		D:\cpp-project\zyuchat\global.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QRegularExpression \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qregularexpression.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\QStyle \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtWidgets\qstyle.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QByteArray \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\QNetworkReply \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qnetworkreply.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qtnetworkglobal.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qtnetwork-config.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qtnetworkexports.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QIODevice \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QString \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\QNetworkRequest \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qnetworkrequest.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QSharedDataPointer \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QUrl \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\QNetworkAccessManager \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qnetworkaccessmanager.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\QSslConfiguration \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qsslconfiguration.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qsslsocket.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qtcpsocket.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qabstractsocket.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qhostaddress.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qsslerror.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qsslcertificate.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcryptographichash.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qdatetime.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcalendar.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qssl.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QFlags \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\QSslPreSharedKeyAuthenticator \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtNetwork\qsslpresharedkeyauthenticator.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QMetaType \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QJsonObject \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qjsonobject.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qjsonvalue.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcborvalue.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qcborcommon.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\quuid.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QDir \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qdir.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qfile.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qfiledevice.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qfileinfo.h \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QSettings \
+		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\qsettings.h \
 		D:\Qt_project\6.5.3\msvc2019_64\include\QtCore\QDebug
 
 debug\global.obj: D:\cpp-project\zyuchat\global.cpp D:\cpp-project\zyuchat\global.h \
@@ -16495,6 +17244,8 @@ debug\moc_clickedoncelabel.obj: debug\moc_clickedoncelabel.cpp
 debug\moc_customizeedit.obj: debug\moc_customizeedit.cpp 
 
 debug\moc_findsuccessdlg.obj: debug\moc_findsuccessdlg.cpp 
+
+debug\moc_friendlabel.obj: debug\moc_friendlabel.cpp 
 
 debug\moc_httpmgr.obj: debug\moc_httpmgr.cpp 
 

@@ -3,7 +3,7 @@
 
 ClickedOnceLabel::ClickedOnceLabel(QWidget *parent):QLabel(parent)
 {
-    setCursor(Qt::PointingHandCursor);
+    setCursor(Qt::PointingHandCursor);//滑上来鼠标变手指
 }
 
 void ClickedOnceLabel::mouseReleaseEvent(QMouseEvent *event)

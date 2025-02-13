@@ -15,6 +15,8 @@ public:
     void SetState(QString normal="", QString hover="", QString press="",
                   QString select="", QString select_hover="", QString select_press="");//设置这个label的六种状态
     ClickLbState GetCurState();//睁眼和闭眼两种状态
+    bool SetCurState(ClickLbState state);
+    void ResetNormalState();
 
 private:
     QString _normal;
@@ -28,7 +30,7 @@ private:
     ClickLbState _curstate;
 
 signals:
-    void clicked(void);//点击label时要发出一个clicked信号表示已点击
+    void clicked(QString, ClickLbState);//点击label时要发出一个clicked信号表示已点击
 };
 
 
