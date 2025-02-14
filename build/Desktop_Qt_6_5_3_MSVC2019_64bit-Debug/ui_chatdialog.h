@@ -14,17 +14,17 @@
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
-#include <QtWidgets/QListWidget>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 #include <chatuserlist.h>
 #include <clickedbtn.h>
+#include <contactuserlist.h>
 #include <customizeedit.h>
+#include <searchlist.h>
 #include <statewidget.h>
 #include "chatpage.h"
-#include "searchlist.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -49,7 +49,7 @@ public:
     ClickedBtn *add_btn;
     ChatUserList *chat_user_list;
     SearchList *search_list;
-    QListWidget *con_user_list;
+    ContactUserList *con_user_list;
     QStackedWidget *stackedWidget;
     ChatPage *chat_page;
     QWidget *friend_apply_page;
@@ -156,7 +156,7 @@ public:
 
         verticalLayout_2->addWidget(search_list);
 
-        con_user_list = new QListWidget(chat_user_wid);
+        con_user_list = new ContactUserList(chat_user_wid);
         con_user_list->setObjectName("con_user_list");
 
         verticalLayout_2->addWidget(con_user_list);
