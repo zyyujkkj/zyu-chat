@@ -12,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent)
     _login_dlg = new LoginDialog(this);
     _login_dlg->setWindowFlags(Qt::CustomizeWindowHint|Qt::FramelessWindowHint);
     setCentralWidget(_login_dlg);
-    _login_dlg->show();
+    //_login_dlg->show();
 
     //创建和注册消息链接
     connect(_login_dlg, &LoginDialog::switchRegister, this, &MainWindow::SlotSwitchReg);
@@ -23,7 +23,7 @@ MainWindow::MainWindow(QWidget *parent)
     //链接创建聊天界面信号
     connect(TcpMgr::GetInstance().get(),&TcpMgr::sig_switch_chatdlg, this, &MainWindow::SlotSwitchChat);
 
-    emit TcpMgr::GetInstance()->sig_switch_chatdlg();
+    //emit TcpMgr::GetInstance()->sig_switch_chatdlg();
 }
 
 MainWindow::~MainWindow()

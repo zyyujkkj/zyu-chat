@@ -51,13 +51,19 @@ static constexpr auto qt_meta_stringdata_CLASSTcpMgrENDCLASS = QtMocHelpers::str
     "sig_login_failed",
     "sig_user_search",
     "std::shared_ptr<SearchInfo>",
+    "sig_friend_apply",
+    "std::shared_ptr<AddFriendApply>",
+    "sig_add_auth_friend",
+    "std::shared_ptr<AuthInfo>",
+    "sig_auth_rsp",
+    "std::shared_ptr<AuthRsp>",
     "slot_tcp_connect",
     "ServerInfo",
     "slot_send_data"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSTcpMgrENDCLASS_t {
-    uint offsetsAndSizes[30];
+    uint offsetsAndSizes[42];
     char stringdata0[7];
     char stringdata1[16];
     char stringdata2[1];
@@ -71,8 +77,14 @@ struct qt_meta_stringdata_CLASSTcpMgrENDCLASS_t {
     char stringdata10[16];
     char stringdata11[28];
     char stringdata12[17];
-    char stringdata13[11];
-    char stringdata14[15];
+    char stringdata13[32];
+    char stringdata14[20];
+    char stringdata15[26];
+    char stringdata16[13];
+    char stringdata17[25];
+    char stringdata18[17];
+    char stringdata19[11];
+    char stringdata20[15];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSTcpMgrENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -90,9 +102,15 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSTcpMgrENDCLASS_t qt_meta_string
         QT_MOC_LITERAL(83, 16),  // "sig_login_failed"
         QT_MOC_LITERAL(100, 15),  // "sig_user_search"
         QT_MOC_LITERAL(116, 27),  // "std::shared_ptr<SearchInfo>"
-        QT_MOC_LITERAL(144, 16),  // "slot_tcp_connect"
-        QT_MOC_LITERAL(161, 10),  // "ServerInfo"
-        QT_MOC_LITERAL(172, 14)   // "slot_send_data"
+        QT_MOC_LITERAL(144, 16),  // "sig_friend_apply"
+        QT_MOC_LITERAL(161, 31),  // "std::shared_ptr<AddFriendApply>"
+        QT_MOC_LITERAL(193, 19),  // "sig_add_auth_friend"
+        QT_MOC_LITERAL(213, 25),  // "std::shared_ptr<AuthInfo>"
+        QT_MOC_LITERAL(239, 12),  // "sig_auth_rsp"
+        QT_MOC_LITERAL(252, 24),  // "std::shared_ptr<AuthRsp>"
+        QT_MOC_LITERAL(277, 16),  // "slot_tcp_connect"
+        QT_MOC_LITERAL(294, 10),  // "ServerInfo"
+        QT_MOC_LITERAL(305, 14)   // "slot_send_data"
     },
     "TcpMgr",
     "sig_con_success",
@@ -106,6 +124,12 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSTcpMgrENDCLASS_t qt_meta_string
     "sig_login_failed",
     "sig_user_search",
     "std::shared_ptr<SearchInfo>",
+    "sig_friend_apply",
+    "std::shared_ptr<AddFriendApply>",
+    "sig_add_auth_friend",
+    "std::shared_ptr<AuthInfo>",
+    "sig_auth_rsp",
+    "std::shared_ptr<AuthRsp>",
     "slot_tcp_connect",
     "ServerInfo",
     "slot_send_data"
@@ -120,23 +144,26 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSTcpMgrENDCLASS[] = {
       11,       // revision
        0,       // classname
        0,    0, // classinfo
-       7,   14, // methods
+      10,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       5,       // signalCount
+       8,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,   56,    2, 0x06,    1 /* Public */,
-       4,    2,   59,    2, 0x06,    3 /* Public */,
-       8,    0,   64,    2, 0x06,    6 /* Public */,
-       9,    1,   65,    2, 0x06,    7 /* Public */,
-      10,    1,   68,    2, 0x06,    9 /* Public */,
+       1,    1,   74,    2, 0x06,    1 /* Public */,
+       4,    2,   77,    2, 0x06,    3 /* Public */,
+       8,    0,   82,    2, 0x06,    6 /* Public */,
+       9,    1,   83,    2, 0x06,    7 /* Public */,
+      10,    1,   86,    2, 0x06,    9 /* Public */,
+      12,    1,   89,    2, 0x06,   11 /* Public */,
+      14,    1,   92,    2, 0x06,   13 /* Public */,
+      16,    1,   95,    2, 0x06,   15 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-      12,    1,   71,    2, 0x0a,   11 /* Public */,
-      14,    2,   74,    2, 0x0a,   13 /* Public */,
+      18,    1,   98,    2, 0x0a,   17 /* Public */,
+      20,    2,  101,    2, 0x0a,   19 /* Public */,
 
  // signals: parameters
     QMetaType::Void, QMetaType::Bool,    3,
@@ -144,9 +171,12 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSTcpMgrENDCLASS[] = {
     QMetaType::Void,
     QMetaType::Void, QMetaType::Int,    2,
     QMetaType::Void, 0x80000000 | 11,    2,
+    QMetaType::Void, 0x80000000 | 13,    2,
+    QMetaType::Void, 0x80000000 | 15,    2,
+    QMetaType::Void, 0x80000000 | 17,    2,
 
  // slots: parameters
-    QMetaType::Void, 0x80000000 | 13,    2,
+    QMetaType::Void, 0x80000000 | 19,    2,
     QMetaType::Void, 0x80000000 | 5, QMetaType::QByteArray,    6,    7,
 
        0        // eod
@@ -176,6 +206,15 @@ Q_CONSTINIT const QMetaObject TcpMgr::staticMetaObject = { {
         // method 'sig_user_search'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<std::shared_ptr<SearchInfo>, std::false_type>,
+        // method 'sig_friend_apply'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<std::shared_ptr<AddFriendApply>, std::false_type>,
+        // method 'sig_add_auth_friend'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<std::shared_ptr<AuthInfo>, std::false_type>,
+        // method 'sig_auth_rsp'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<std::shared_ptr<AuthRsp>, std::false_type>,
         // method 'slot_tcp_connect'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<ServerInfo, std::false_type>,
@@ -198,8 +237,11 @@ void TcpMgr::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         case 2: _t->sig_switch_chatdlg(); break;
         case 3: _t->sig_login_failed((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 4: _t->sig_user_search((*reinterpret_cast< std::add_pointer_t<std::shared_ptr<SearchInfo>>>(_a[1]))); break;
-        case 5: _t->slot_tcp_connect((*reinterpret_cast< std::add_pointer_t<ServerInfo>>(_a[1]))); break;
-        case 6: _t->slot_send_data((*reinterpret_cast< std::add_pointer_t<ReqId>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QByteArray>>(_a[2]))); break;
+        case 5: _t->sig_friend_apply((*reinterpret_cast< std::add_pointer_t<std::shared_ptr<AddFriendApply>>>(_a[1]))); break;
+        case 6: _t->sig_add_auth_friend((*reinterpret_cast< std::add_pointer_t<std::shared_ptr<AuthInfo>>>(_a[1]))); break;
+        case 7: _t->sig_auth_rsp((*reinterpret_cast< std::add_pointer_t<std::shared_ptr<AuthRsp>>>(_a[1]))); break;
+        case 8: _t->slot_tcp_connect((*reinterpret_cast< std::add_pointer_t<ServerInfo>>(_a[1]))); break;
+        case 9: _t->slot_send_data((*reinterpret_cast< std::add_pointer_t<ReqId>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QByteArray>>(_a[2]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -239,6 +281,27 @@ void TcpMgr::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
                 return;
             }
         }
+        {
+            using _t = void (TcpMgr::*)(std::shared_ptr<AddFriendApply> );
+            if (_t _q_method = &TcpMgr::sig_friend_apply; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 5;
+                return;
+            }
+        }
+        {
+            using _t = void (TcpMgr::*)(std::shared_ptr<AuthInfo> );
+            if (_t _q_method = &TcpMgr::sig_add_auth_friend; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 6;
+                return;
+            }
+        }
+        {
+            using _t = void (TcpMgr::*)(std::shared_ptr<AuthRsp> );
+            if (_t _q_method = &TcpMgr::sig_auth_rsp; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 7;
+                return;
+            }
+        }
     }
 }
 
@@ -265,13 +328,13 @@ int TcpMgr::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 7)
+        if (_id < 10)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 7;
+        _id -= 10;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 7)
+        if (_id < 10)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 7;
+        _id -= 10;
     }
     return _id;
 }
@@ -308,5 +371,26 @@ void TcpMgr::sig_user_search(std::shared_ptr<SearchInfo> _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 4, _a);
+}
+
+// SIGNAL 5
+void TcpMgr::sig_friend_apply(std::shared_ptr<AddFriendApply> _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 5, _a);
+}
+
+// SIGNAL 6
+void TcpMgr::sig_add_auth_friend(std::shared_ptr<AuthInfo> _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 6, _a);
+}
+
+// SIGNAL 7
+void TcpMgr::sig_auth_rsp(std::shared_ptr<AuthRsp> _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 7, _a);
 }
 QT_WARNING_POP

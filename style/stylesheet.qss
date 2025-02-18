@@ -844,3 +844,9 @@ ApplyFriendItem #addBtn[state='press'] {
 #voice_chat[state='press'] {
  border-image: url(:/res/voice_chat_press.png);
 }
+
+#already_add_lb{
+    color:rgb(153,153,153);
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+}
